@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <h1>Income calculator</h1>
+      <div class="inputs-block">
+        <div class="inputs-block-column">
+          <h6>Monthly income</h6>
+          <div class="inputs-wrapper">
+            <input
+              type="number"
+              placeholder="Salary"
+              id="income-salary"
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Freelance"
+              id="income-freelance"
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Add income"
+              id="income-extra-1"
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Add income"
+              id="income-extra-2"
+              class="input"
+            />
+          </div>
+        </div>
+        <div class="inputs-block-column">
+          <h6>Mandatory expenses</h6>
+          <div class="inputs-wrapper">
+            <input
+              type="number"
+              placeholder="Flat rent"
+              id="costs-flat"
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Communal services"
+              id="costs-house-services"
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Transport"
+              id="costs-transport"
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Loans"
+              id="costs-credit"
+              class="input"
+            />
+          </div>
+        </div>
+        <div class="inputs-block-column">
+          <div class="total-numb">
+            <h6>Available per month (no piggy bank):</h6>
+            <input
+              type="number"
+              class="total"
+              id="total-month"
+              value="0"
+              readonly
+            />
+          </div>
+          <div class="total-numb">
+            <h6>Available per day:</h6>
+            <input
+              type="number"
+              class="total"
+              id="total-day"
+              value="0"
+              readonly
+            />
+          </div>
+          <div class="total-numb">
+            <h6>Accumulate for the year:</h6>
+            <input
+              type="number"
+              class="total"
+              id="total-year"
+              value="0"
+              readonly
+            />
+          </div>
+        </div>
+      </div>
+      <div class="range-block">
+        <h6>Piggy bank (How much do we save?)</h6>
+        <div class="range-wrapper">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            id="money-box-range"
+          />
+        </div>
+        <div><span id="total-precents">0</span>%</div>
+      </div>
+      <div class="result-block">
+        <div class="total-numb">
+          <h6>Save:</h6>
+          <input type="number" id="accumulation" value="0" readonly />
+        </div>
+        <div class="total-numb">
+          <h6>Spend:</h6>
+          <input type="number" id="spend" value="0" readonly />
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 
 ## About
 
-Classic game of tic-tac-toe.
+This calculator allows you to calculate the required costs per month, <br/> choose the amount of funds to save, as well as determine how much <br/> we can save for a month or year.
 
 
 ## Technologies
